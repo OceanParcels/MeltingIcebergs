@@ -11,4 +11,5 @@ Code for Mark Elbertsen's MSc project on melting icebergs in the Eocene.
 
 #### Folders
 1) preparation_files: Model files used to prepare the simulations.
-2) plotting_files: Notebooks used to generate the plots and animations used in the thesis.
+2) analysis_files: Analyse specific model components.
+3) plotting_files: Notebooks used to generate the plots and animations used in the thesis.
