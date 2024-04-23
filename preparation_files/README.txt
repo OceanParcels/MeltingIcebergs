@@ -1,7 +1,0 @@
-To construct the model grid and bathymetry, and define the iceberg release locations and coastal regions, the following files are used:
-1) adapted_make_grid.py*: Python script to shift the high-resolution grid (grid_coordinates_pop_tx0.1_38ma.nc) from Nooteboom et al. (2022) and create the file 'new_grid_coordinates_pop_tx0.1_38ma.nc'. Adapted from Nooteboom et al. (2022).
-2) adapted_make_bathymetry.py: Python script to interpolate the low-resolution bathymetry (TopoBathy38.nc) from Baatsen et al. (2020) to the high-resolution grid (new_grid_coordinates_pop_x0.1_38ma.nc) and create a high-resolution bathymetry file 'adapted_bathymetry.nc'. Adapted from a script of Nooteboom et al. (2022).
-3) ReleaseLocations.ipynb: Define the position of ODP Site 696 and forward release locations along the 500m bathymetry line based on coastal regions defined by Carter et al. (2017). Define backward release locations within the gridcell of ODP Site 696.
-4) make_regions.ipynb: Define a field containing the regions from Carter et al. (2017) using the defined release forward locations and bathymetry to create a file 'bathymetry_regions.py'.
-	
-*To run the model, the depth-range of the grid can be adapted further using: ncks -d depth_t,,730. -d w_dep,,815. new_grid_coordinates_pop_tx0.1_38ma.nc edited_grid_coordinates_pop_tx0.1_38ma.nc
