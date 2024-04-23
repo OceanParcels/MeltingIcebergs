@@ -63,16 +63,18 @@ Finally, the files used for plotting (*.ipynb files in 'plotting_files' folder) 
 │
 ├───analysis_files
 │       BasalMeltSensitivity.ipynb
-│       README.txt
+│       README.md
 │       Salinity.ipynb
 │
 ├───eocene_icebergs
 │       eocene_icebergs_integrated.py
 │       eocene_icebergs_surface.py
+│       README.md
 │
 ├───icebergs
 │       icebergs_kernels.py
 │       icebergs_particleclass.py
+│       README.md
 │
 ├───plotting_files
 │       AnimationPreparation.ipynb
@@ -80,24 +82,27 @@ Finally, the files used for plotting (*.ipynb files in 'plotting_files' folder) 
 │       PaperFigures-Forwards.ipynb
 │       PaperFigures-Modern.ipynb
 │       PaperFigures-Other.ipynb
-│       README.txt
+│       README.md
 │
 └───preparation_files
         adapted_make_bathymetry.py
         adapted_make_grid.py
         make_regions.ipynb
-        README.txt
+        README.md
         ReleaseLocations.ipynb
 ```
 
 ## :computer: Code Usage
-All simulations require the files in the 'icebergs' folder to define the kernels and iceberg particle class used in the model. By adapting these files, one could, for example, define new iceberg-size classes, implement different melt parameterisations, or change the stored model variables.
+All simulations require the files in the 'icebergs' folder to define the kernels and iceberg particle class used in the model. By adapting these files, one could, for example, define new iceberg-size classes, implement different melt parameterisations, or change the stored model variables. Some of the variables used here (salinity, Monin-Obukof length) were determined outside of the model in the files from the 'analysis_files' folder.
 
 Using the files in the 'preparation_files' folder, the Eocene model grid and bathymetry used in the forcing model of Nooteboom et al. (2022) can be constructed. In addition, this folder contains the files to define the iceberg release locations and the coastal regions based on Carter et al. (2017) as used in the simulations.
 
 To run the Eocene simulations, one can select one or both (depth-integrated and/or surface-only) of the files in the 'eocene_icebergs' folder. These simulations use model data from the eddy-resolving late Eocene model by Nooteboom et al. (2022) as forcing (daily fields of ocean temperature and velocity components for model years 38 to 42, and monthly fields for the surface wind stress components).
 
 For a short modern simulation, the 'modern_icebergs_integrated.py' file is needed. These simulations use the Mercator Ocean International (MOi) hydrodynamics dataset (Gasparin et al., 2018) for ocean temperature and velocity components. For the surface wind components, ERA5 reanalysis data is used. These simulations cover only the year 2021.
+
+To recreate the figures and animations shown in the paper and supplements, one can use the notebooks in the 'plotting_files' folder.
+
 
 ## :envelope_with_arrow: Contact and contribution
 For questions about this repository, please contact the authors, Mark Elbertsen (m.v.elbertsen@uu.nl) or Erik van Sebille (e.vansebille@uu.nl), or open an Issue or Pull request in this repository.
