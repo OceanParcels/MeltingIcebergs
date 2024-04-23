@@ -21,7 +21,7 @@ The files have the following dependencies:
 This folder contains the notebooks used to generate the figures and animations used in the paper.
 
 ```bash
-|   AnimationPreparation.ipynb
+|   AnimationPaper.ipynb
 │   PaperFigures-Backwards.ipynb
 │   PaperFigures-Forwards.ipynb
 │   PaperFigures-Modern.ipynb
@@ -30,7 +30,7 @@ This folder contains the notebooks used to generate the figures and animations u
 ```
 
 ## :computer: Code Usage
-1) AnimationPreparation.ipynb: Prepare and compile the iceberg animation.
+1) AnimationPaper.ipynb: Prepare and compile the iceberg animation.
 2) PaperFigures-Backwards.ipynb: Analyse and generate the figures from backward simulations.
 2) PaperFigures-Forwards.ipynb: Analyse and generate the figures from forward simulations.
 2) PaperFigures-Modern.ipynb: Analyse and generate the figures from modern simulations.
