@@ -8,6 +8,10 @@ This repository contains the code for Mark Elbertsen's MSc project used to perfo
 ## Dependencies
 The model was run using Python 3.8.13.
 
+The main model fields describing the icebergs (*.py files in 'icebergs' folder) have the following dependencies:
+* parcels (2.4)
+* numpy (1.23.3)
+
 The simulations (*.py files 'modern_icebergs' and those stored in 'eocene_icebergs' folder) have the following dependencies:
 * parcels (2.4)
 * numpy (1.23.3)
