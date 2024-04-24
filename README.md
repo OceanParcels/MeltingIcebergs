@@ -117,5 +117,5 @@ This repository is licensed under an MIT License. You can view the [LICENSE here
 This research is supported by the ERC Starting Grant 802835 (OceaNice) to Peter K. Bijl.
 
 ## Acknowledgements
-We thank Michael Kliphuis for assisting with and management of the output data. We thank Anna von der Heydt and Peter Nooteboom for providing the forcing model data, and Peter Nooteboom for assisting with the initial model set-up. We also want to thank Michael Baatsen for providing climate index data used during the analysis of the results ('PaperFiguresFinal-Other.ipynb').
+We thank Michael Kliphuis for assisting with and management of the output data. We thank Anna von der Heydt and Peter Nooteboom for providing the forcing model data, and Peter Nooteboom for assisting with the initial model set-up. We also want to thank Michael Baatsen for providing climate index data used during the analysis of the results.
 
