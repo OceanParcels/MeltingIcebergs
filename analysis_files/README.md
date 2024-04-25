@@ -1,11 +1,10 @@
 
 ## MeltingIcebergs > analysis_files
 
-#### Main Code
 ## :page_with_curl: Description
 During (some of) the simulations, values for the ocean salinity and Monin-Obukhov length are required. The files in this folder can be used to estimate those values based on the forcing model fields or previous studies.
 
-## Dependencies
+## ⚙️ Dependencies
 The model was run using Python 3.8.13.
 
 The files have the following dependencies:
