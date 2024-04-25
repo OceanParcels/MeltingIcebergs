@@ -1,10 +1,9 @@
 ## MeltingIcebergs > plotting_files
 
-#### Main Code
 ## :page_with_curl: Description
 This folder contains the files to analyse the data from the simulations and generate the figures and animations used in the paper and supplements.
 
-## Dependencies
+## ⚙️ Dependencies
 The model was run using Python 3.8.13.
 
 The files have the following dependencies:
