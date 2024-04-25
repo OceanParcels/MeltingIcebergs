@@ -7,42 +7,23 @@ This repository contains the code for Mark Elbertsen's MSc project used to perfo
 ## ⚙️ Dependencies
 The model was run using Python 3.8.13.
 
-The main model fields describing the icebergs (*.py files in 'icebergs' folder) have the following dependencies:
-* parcels (2.4)
-* numpy (1.23.3)
-
-The simulations (*.py files 'modern_icebergs' and those stored in 'eocene_icebergs' folder) have the following dependencies:
-* parcels (2.4)
-* numpy (1.23.3)
-* pandas (1.4.4)
-* xarray (0.20.1)
-
-The files used in preparation for some model files (*.py and *.ipynb files in 'preparation_files' folder) have the following dependencies:
+The files have the following dependencies:
 * cartopy (0.18.0)
 * cmocean (3.0.3)
 * matplotlib-inline (0.1.6)
 * netCDF4 (1.5.7)
 * numpy (1.23.3)
+* pandas (1.4.4)
+* parcels (2.4)
 * scipy (1.9.1)
 * shapely (1.8.4)
 * xarray (0.20.1)
 
-The files used to analyse some initial model files (*.ipynb files in 'analysis_files' folder) have the following dependencies:
-* cartopy (0.18.0)
-* cmocean (3.0.3)
-* matplotlib-inline (0.1.6)
-* numpy (1.23.3)
-* shapely (1.8.4)
-* xarray (0.20.1)
-
-Finally, the files used for plotting (*.ipynb files in 'plotting_files' folder) have the following dependencies:
-* cartopy (0.18.0)
-* cmocean (3.0.3)
-* matplotlib-inline (0.1.6)
-* numpy (1.23.3)
-* pandas (1.4.4)
-* shapely (1.8.4)
-* xarray (0.20.1)
+To set up the environment, one could use the 'meltingicebergs.yml' file using:
+```
+conda env create -f meltingicebergs.yml
+conda activate meltingicebergs
+```
 
 
 ## :file_folder: Folder Structure
@@ -102,7 +83,7 @@ To recreate the figures and animations shown in the paper and supplements, one c
 
 
 ## :envelope_with_arrow: Contact and contribution
-For questions about this repository, please contact the authors, Mark Elbertsen (m.v.elbertsen@uu.nl) or Erik van Sebille (e.vansebille@uu.nl), or open an Issue or Pull request in this repository.
+For questions about this repository, please contact the authors, [Mark Elbertsen](https://github.com/mvelbertsen) (m.v.elbertsen@uu.nl) or [Erik van Sebille](https://github.com/erikvansebille) (e.vansebille@uu.nl), or open an Issue or Pull request in this repository.
 
 ## :balance_scale: License
 This repository is licensed under an MIT License. You can view the [LICENSE here](https://github.com/AristotleKandylas/MeltingIcebergs_rev/blob/main/LICENSE)
@@ -111,8 +92,8 @@ This repository is licensed under an MIT License. You can view the [LICENSE here
 ...To be added after Publication on Zenodo...
 
 ## Funding
-This research is supported by the ERC Starting Grant 802835 (OceaNice) to Peter K. Bijl.
+This research is supported by the ERC Starting Grant 802835 (OceaNice) to [Peter K. Bijl](https://www.uu.nl/staff/PKBijl).
 
 ## Acknowledgements
-We thank Michael Kliphuis for assisting with and management of the output data. We thank Anna von der Heydt and Peter Nooteboom for providing the forcing model data, and Peter Nooteboom for assisting with the initial model set-up. We also want to thank Michael Baatsen for providing climate index data used during the analysis of the results.
+We thank [Michael Kliphuis](https://github.com/michaelkliphuis) for assisting with and management of the output data. We thank [Anna von der Heydt](https://www.uu.nl/staff/ASvonderHeydt) and [Peter Nooteboom](https://github.com/pdnooteboom) for providing the forcing model data, and [Peter Nooteboom](https://github.com/pdnooteboom) for assisting with the initial model set-up. We also want to thank [Michael Baatsen](https://github.com/MichielBaatsen) for providing climate index data used during the analysis of the results.
 
