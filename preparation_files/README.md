@@ -1,10 +1,9 @@
 ## MeltingIcebergs > preparation_files
 
-#### Main Code
 ## :page_with_curl: Description
 This folder contains the files used to construct the model grid and bathymetry and define the iceberg release locations and coastal regions.
 
-## Dependencies
+## ⚙️ Dependencies
 The model was run using Python 3.8.13.
 
 The files have the following dependencies:
