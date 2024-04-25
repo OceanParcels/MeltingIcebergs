@@ -17,9 +17,6 @@ import numpy as np
 import xarray as xr
 import pandas as pd
 
-import icebergs_kernels as kernels
-import icebergs_particleclass as particleclass
-
 from operator import attrgetter
 
 
