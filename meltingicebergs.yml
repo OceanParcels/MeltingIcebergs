@@ -1,0 +1,16 @@
+name: meltingicebergs
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.8.13
+  - parcels=2.4
+  - numpy=1.23.3
+  - pandas=1.4.4
+  - xarray=0.20.1
+  - cartopy=0.18.0
+  - cmocean=3.0.3
+  - matplotlib-inline=0.1.6
+  - netCDF4=1.5.7
+  - scipy=1.9.1
+  - shapely=1.8.4
