@@ -1,7 +1,6 @@
 # MeltingIcebergs
 ❗ Note: This is the official code repository for Mark Elbertsen's MSc project on melting icebergs in the Eocene.
 
-#### Main Code
 ## :page_with_curl: Description
 This repository contains the code for Mark Elbertsen's MSc project used to perform depth-integrated Lagrangian iceberg tracing around Antarctica during the late Eocene. Using the OceanParcels framework, iceberg melting (or growth) is simulated using several kernels, including for the dominant iceberg melt terms: basal melt, buoyant convection and wave erosion. By defining kernels for five different order-of-magnitude iceberg size classes, the model can be used to determine the minimum iceberg size required for icebergs to survive the late Eocene warmth.
 
