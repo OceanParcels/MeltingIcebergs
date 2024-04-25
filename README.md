@@ -19,7 +19,8 @@ The files have the following dependencies:
 * shapely (1.8.4)
 * xarray (0.20.1)
 
-To set up the environment, one could use the 'meltingicebergs.yml' file using:
+### Environment file
+To set up an environment with the dependencies directly, one could use the 'meltingicebergs.yml' file using:
 ```
 conda env create -f meltingicebergs.yml
 conda activate meltingicebergs
