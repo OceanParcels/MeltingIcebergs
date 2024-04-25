@@ -3,7 +3,7 @@
 ## :page_with_curl: Description
 This folder contains the files to define the model kernels and iceberg particle classes used. By adapting these files, one could, for example, define new iceberg-size classes, implement different melt parameterisations, or change the stored model variables.
 
-## Dependencies
+## ⚙️ Dependencies
 The model was run using Python 3.8.13.
 
 The files have the following dependencies:
