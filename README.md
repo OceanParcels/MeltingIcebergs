@@ -32,6 +32,7 @@ conda activate meltingicebergs
 
 ```bash
 │   LICENSE
+│   meltingicebergs.yml
 │   output.doc
 │   outputfolder.txt
 │   README.md
