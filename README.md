@@ -11,13 +11,9 @@ The files have the following dependencies:
 * cartopy (0.18.0)
 * cmocean (3.0.3)
 * matplotlib-inline (0.1.6)
-* netCDF4 (1.5.7)
-* numpy (1.23.3)
 * pandas (1.4.4)
 * parcels (2.4)
-* scipy (1.9.1)
 * shapely (1.8.4)
-* xarray (0.20.1)
 
 ### Environment file
 To set up an environment with the dependencies directly, one could use the 'meltingicebergs.yml' file using:
