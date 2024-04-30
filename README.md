@@ -27,8 +27,8 @@ conda activate meltingicebergs
 1) preparation_files: Model files used to prepare the simulations.
 2) analysis_files: Analyse specific model components.
 3) plotting_files: Notebooks used to generate the plots and animations used in the thesis.
-4) eocene_icebergs: Model code to simulate iceberg trajectories.
-5) icebergs: Model code (kernels) to initialise and adapt the icebergs throughout the simulation.
+4) iceberg_simulations: Model code to simulate iceberg trajectories.
+5) iceberg_model: Model code (kernels) to initialise and adapt the icebergs throughout the simulation.
 
 ```bash
 │   LICENSE
