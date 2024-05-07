@@ -173,8 +173,8 @@ dynamic =  pset.Kernel(kernels.AdvectionEE) + pset.Kernel(periodicBC) + \
 
 #==================== EXECUTE ====================#
 ### Define output file #(!)#
-out = pset.ParticleFile(name='modern_1y_int_30d_1hdtar_C4_monthly_ate.zarr', outputdt=delta(days=30)) # monthly
-# out = pset.ParticleFile(name='modern_1y_int_30d_1hdtar_C4_hourly.zarr', outputdt=delta(days=30))      # hourly
+out = pset.ParticleFile(name='29p_1y_intm_30d_1hdtar_C4monthly.zarr', outputdt=delta(days=30)) # monthly
+# out = pset.ParticleFile(name='29p_1y_intm_30d_1hdtar_C4hourly.zarr', outputdt=delta(days=30))  # hourly
 
 ### Execute #(!)#
 ## Daily

@@ -181,7 +181,7 @@ dynamic =  pset.Kernel(kernels.AdvectionEESurf) + pset.Kernel(periodicBC) + \
 #==================== EXECUTE ====================#
 ### Define output file #(!)# #(?)#
 out = pset.ParticleFile(name='29p_5y_surf_30d_1hdtar_C4.zarr', outputdt=delta(days=30))
-# out = pset.ParticleFile(name='25p_5y_surf_30d_1hdtar_C1.zarr', outputdt=delta(days=30))
+# out = pset.ParticleFile(name='25p_5y_surf_30d_1hdtar_C1bw.zarr', outputdt=delta(days=30))
 
 ### Execute #(?)#
 ## Forward
