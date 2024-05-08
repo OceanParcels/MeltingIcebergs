@@ -211,7 +211,7 @@ def SampleUVT(particle, fieldset, time):
 
 #==================== EXECUTE ====================#
 ### Define output file #(!)#
-out = pset.ParticleFile(name='29p_5y_30d_1hdtar.zarr', outputdt=delta(days=1))
+out = pset.ParticleFile(name='29p_5y_pass_30d_1hdtar.zarr', outputdt=delta(days=1))
 
 ### Execute #(?)#
 ## Record initial values of field

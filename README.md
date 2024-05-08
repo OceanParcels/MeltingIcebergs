@@ -11,13 +11,9 @@ The files have the following dependencies:
 * cartopy (0.18.0)
 * cmocean (3.0.3)
 * matplotlib-inline (0.1.6)
-* netCDF4 (1.5.7)
-* numpy (1.23.3)
 * pandas (1.4.4)
 * parcels (2.4)
-* scipy (1.9.1)
 * shapely (1.8.4)
-* xarray (0.20.1)
 
 ### Environment file
 To set up an environment with the dependencies directly, one could use the 'meltingicebergs.yml' file using:
@@ -31,11 +27,12 @@ conda activate meltingicebergs
 1) preparation_files: Model files used to prepare the simulations.
 2) analysis_files: Analyse specific model components.
 3) plotting_files: Notebooks used to generate the plots and animations used in the thesis.
-4) eocene_icebergs: Model code to simulate iceberg trajectories.
-5) icebergs: Model code (kernels) to initialise and adapt the icebergs throughout the simulation.
+4) iceberg_simulations: Model code to simulate iceberg trajectories.
+5) iceberg_model: Model code (kernels) to initialise and adapt the icebergs throughout the simulation.
 
 ```bash
 │   LICENSE
+│   meltingicebergs.yml
 │   output.doc
 │   outputfolder.txt
 │   README.md
