@@ -23,10 +23,10 @@ from operator import attrgetter
 
 #==================== LOAD/SELECT DATA & DEFINE FIELDSET ====================#
 ### Grid (POP)
-mesh_mask = '/nethome/5867800/grid/edited_grid_coordinates_pop_tx0.1_38ma.nc'
+mesh_mask = '{path_to_created_grid}/edited_grid_coordinates_pop_tx0.1_38ma.nc'
 
 ### Eocene data Nooteboom et al. (2022)
-data_path_ocean = '/storage/shared/pop/p21a.EO38Ma.tx0.1.2pic_control/daily/'
+data_path_ocean = '{path_to_folder_forcing_model_daily_fields}'
 
 files = sorted(glob(data_path_ocean+'vars_first600m_eocene_2pic_pop_00*.nc'))
 filename = data_path_ocean+'vars_first600m_eocene_2pic_pop_00400301.nc'
@@ -63,7 +63,7 @@ fieldset = FieldSet.from_pop(filenames, variables, dimensions, indices=indices, 
 # fieldset.add_vector_field(XY)
 
 ### Bathymetry and regions #(?)#
-# br = '/nethome/5867800/grid/bathymetry_regions.nc'
+# br = '{path_to_created_region_file}/bathymetry_regions.nc'
 
 # filenames_b = {'B': {'lon': mesh_mask, 'lat': mesh_mask, 'data': br}}
 # variables_b = {'B': 'bathymetry'}
