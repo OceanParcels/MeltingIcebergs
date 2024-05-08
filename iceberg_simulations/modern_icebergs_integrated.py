@@ -17,7 +17,7 @@ import xarray as xr
 import pandas as pd
 
 import sys
-sys.path.append('../active/')
+sys.path.append('../iceberg_model/')
 
 import icebergs_kernels as kernels
 import icebergs_particleclass as particleclass
@@ -25,18 +25,18 @@ import icebergs_particleclass as particleclass
 
 
 #==================== LOAD/SELECT DATA & DEFINE FIELDSET ====================#
-coord_path = '/storage/shared/oceanparcels/input_data/'
-data_path = coord_path
-data_pathm = 'fields/'
+coord_path = '{path_to_folder_forcing_model_grids}'
+data_path  = '{path_to_folder_forcing_model_data}' # MOi and daily ERA5
+data_pathm = '{path_to_folder_forcing_model_data_monthly}' # monthly ERA5 data
 
 ### Ocean fields #(!)#
-# ufiles = sorted(glob(data_path+'MOi/psy4v3r1/psy4v3r1-daily_U_2021-*.nc')) # daily
-ufiles = sorted(glob(data_path+'MOi/psy4v3r1-monthly_U_2021-*.nc'))        # monthly
+# ufiles = sorted(glob(data_path+'{path_to_MOi_daily_fields}'))   # daily; example: 'MOi/psy4v3r1/psy4v3r1-daily_U_2021-*.nc'
+ufiles = sorted(glob(data_path+'{path_to_MOi_monthly_fields}')) # monthly; example: 'MOi/psy4v3r1-monthly_U_2021-*.nc'
 vfiles = [f.replace('_U_', '_V_') for f in ufiles]
 tfiles = [f.replace('_U_', '_T_') for f in ufiles]
-wfile = coord_path+'MOi/psy4v3r1/psy4v3r1-daily_W_2021-01-01.nc'
+wfile = coord_path+'{path_to_single_MOi_daily_field}' # Example: 'MOi/psy4v3r1/psy4v3r1-daily_W_2021-01-01.nc'
 
-mesh_mask = coord_path + 'MOi/domain_ORCA0083-N006/coordinates.nc'
+mesh_mask = coord_path + '{path_to_MOi_coordinates}' # Example: 'MOi/domain_ORCA0083-N006/coordinates.nc'
 
 filenames = {'U': {'lon': mesh_mask, 'lat': mesh_mask, 'depth': wfile, 'data': ufiles},
              'V': {'lon': mesh_mask, 'lat': mesh_mask, 'depth': wfile, 'data': vfiles},
@@ -49,15 +49,15 @@ dimensions = {'U': {'lon': 'glamf', 'lat': 'gphif', 'depth': 'depthw', 'time': '
               'T': {'lon': 'glamf', 'lat': 'gphif', 'depth': 'depthw', 'time': 'time_counter'}}
 
 ### Bathymetry
-bathymetry = coord_path + 'MOi/domain_ORCA0083-N006/bathymetry_ORCA12_V3.3.nc'
+bathymetry = coord_path + '{path_to_MOi_bathymetry}' # 'MOi/domain_ORCA0083-N006/bathymetry_ORCA12_V3.3.nc'
 
 filenamesb = {'B': {'lon': bathymetry, 'lat': bathymetry, 'depth': bathymetry, 'data': bathymetry}}
 variablesb = {'B': 'Bathymetry'}
 dimensionsb = {'B': {'lon': 'nav_lon', 'lat': 'nav_lat'}}
 
 ### Wind #(!)#
-# filesw = sorted(glob(data_path+'ERA5/reanalysis-era5-single-level_wind10m_202101*.nc')) # daily
-filesw = sorted(glob(data_pathm+'ERA5/reanalysis-era5-single-level_wind10m_2021*.nc'))  # monthly
+# filesw = sorted(glob(data_path+'{path_to_ERA5_daily_fields}'))    # daily; example: 'ERA5/reanalysis-era5-single-level_wind10m_202101*.nc'
+filesw = sorted(glob(data_pathm+'{path_to_ERA5_monthly_fields}')) # monthly; example: 'ERA5/reanalysis-era5-single-level_wind10m_2021*.nc'
 
 filenamesw = {'U10': {'lon': filesw[0], 'lat': filesw[0], 'data': filesw},
                 'V10': {'lon': filesw[0], 'lat': filesw[0], 'data': filesw}}
