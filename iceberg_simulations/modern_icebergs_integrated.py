@@ -31,7 +31,7 @@ data_pathm = '{path_to_folder_forcing_model_data_monthly}' # monthly ERA5 data
 
 ### Ocean fields #(!)#
 # ufiles = sorted(glob(data_path+'{path_to_MOi_daily_fields}'))   # daily; example: 'MOi/psy4v3r1/psy4v3r1-daily_U_2021-*.nc'
-ufiles = sorted(glob(data_path+'{path_to_MOi_monthly_fields}')) # monthly; example: 'MOi/psy4v3r1-monthly_U_2021-*.nc'
+ufiles = sorted(glob(data_pathm+'{path_to_MOi_monthly_fields}')) # monthly; example: 'MOi/psy4v3r1-monthly_U_2021-*.nc'
 vfiles = [f.replace('_U_', '_V_') for f in ufiles]
 tfiles = [f.replace('_U_', '_T_') for f in ufiles]
 wfile = coord_path+'{path_to_single_MOi_daily_field}' # Example: 'MOi/psy4v3r1/psy4v3r1-daily_W_2021-01-01.nc'
