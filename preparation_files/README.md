@@ -30,9 +30,9 @@ This folder contains the model code used to prepare some basic settings for the 
 
 ## :computer: Code Usage
 1) adapted_make_bathymetry.py: Interpolate the low-resolution bathymetry (TopoBathy38.nc) from Baatsen et al. (2020) to the high-resolution grid (new_grid_coordinates_pop_x0.1_38ma.nc) and create a high-resolution bathymetry file 'adapted_bathymetry.nc'. Adapted from a script of Nooteboom et al. (2022).
-2) adapted_make_grid.py*: Align the high-resolution grid (grid_coordinates_pop_tx0.1_38ma.nc) and create the file 'new_grid_coordinates_pop_tx0.1_38ma.nc'. Adapted from Nooteboom et al. (2022).
+2) adapted_make_grid.py*: Align the high-resolution grid (grid_coordinates_pop_tx0.1_38ma.nc, see Nooteboom et al. (2022)) and create the file 'new_grid_coordinates_pop_tx0.1_38ma.nc'. Adapted from Nooteboom et al. (2022).
 3) make_regions.ipynb: Define a field containing the coastal regions from Carter et al. (2017) using the defined forward release locations and high-resolution bathymetry to create a file 'bathymetry_regions.py'.
-4) ReleaseLocations.ipynb: Define the position of ODP Site 696 and the forward release locations along the 500m bathymetry line based on the coastal regions defined by Carter et al. (2017). Define backward release locations within the grid cell of ODP Site 696.
+4) ReleaseLocations.ipynb: Define the position of ODP Site 696 and the forward release locations along the 500m bathymetry line based on the coastal regions defined by Carter et al. (2017). Define backward release locations within the grid cell of ODP Site 696. Part of this code requires GEBCO (version 2022) data for the region between roughly -59.7656 and -84.375°N, and 57.5156 and -84.5156°E.
 
 	
-*Depending on the used depth range of the forcing model, the depth range of the model grid should be adapted to match. In the case of the late Eocene simulations, this was done using: ncks -d depth_t,,730. -d w_dep,,815. new_grid_coordinates_pop_tx0.1_38ma.nc edited_grid_coordinates_pop_tx0.1_38ma.nc
+*Depending on the used depth range of the forcing model, the depth range of the model grid should be adapted to match. In the case of the late Eocene simulations, this was done using: ncks -d depth_t,,730. -d w_dep,,815. new_grid_coordinates_pop_tx0.1_38ma.nc edited_grid_coordinates_pop_tx0.1_38ma.nc to create a grid with adapted depth range called 'edited_grid_coordinates_pop_tx0.1_38ma.nc'.
