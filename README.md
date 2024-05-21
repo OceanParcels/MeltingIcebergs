@@ -84,10 +84,10 @@ To recreate the figures and animations shown in the paper and supplements, one c
 For questions about this repository, please contact the authors, [Mark Elbertsen](https://github.com/mvelbertsen) (m.v.elbertsen@uu.nl) or [Erik van Sebille](https://github.com/erikvansebille) (e.vansebille@uu.nl), or open an Issue or Pull request in this repository.
 
 ## :balance_scale: License
-This repository is licensed under an MIT License. You can view the [LICENSE here](https://github.com/AristotleKandylas/MeltingIcebergs_rev/blob/main/LICENSE)
+This repository is licensed under an MIT License. You can view the [LICENSE here](https://github.com/OceanParcels/MeltingIcebergs/blob/main/LICENSE)
 
 ## :bookmark: Cite this repository
-...To be added after Publication on Zenodo...
+This repository can be found at: <a href="https://zenodo.org/doi/10.5281/zenodo.11208937"><img src="https://zenodo.org/badge/693549425.svg" alt="DOI"></a>.
 
 ## Funding
 This research is supported by the ERC Starting Grant 802835 (OceaNice) to [Peter K. Bijl](https://www.uu.nl/staff/PKBijl).
