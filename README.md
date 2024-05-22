@@ -31,6 +31,7 @@ conda activate meltingicebergs
 5) iceberg_model: Model code (kernels) to initialise and adapt the icebergs throughout the simulation.
 
 ```bash
+|   CITATION.cff
 │   LICENSE
 │   meltingicebergs.yml
 │   output.doc
