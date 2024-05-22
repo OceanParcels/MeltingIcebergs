@@ -1,0 +1,52 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: MeltingIcebergs
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: Mark Vinz
+    family-names: Elbertsen
+    email: m.v.elbertsen@uu.nl
+    affiliation: Utrecht University
+    orcid: 'https://orcid.org/0009-0008-9467-0633'
+  - given-names: Erik
+    family-names: Sebille
+    name-particle: van
+    email: e.vansebille@uu.nl
+    affiliation: Utrecht University
+    orcid: 'https://orcid.org/0000-0003-2041-0704'
+  - given-names: Peter Kristian
+    family-names: Bijl
+    email: p.k.bijl@uu.nl
+    affiliation: Utrecht University
+    orcid: 'https://orcid.org/0000-0002-1710-4012'
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.11208938
+    description: MeltingIcebergs v1.0
+repository-code: 'https://github.com/OceanParcels/MeltingIcebergs'
+repository: 'https://zenodo.org/records/11208938'
+abstract: >-
+  This repository contains the code for Mark Elbertsen's MSc
+  project used to perform depth-integrated Lagrangian
+  iceberg tracing around Antarctica during the late Eocene.
+  Using the OceanParcels framework, iceberg melting (or
+  growth) is simulated using several kernels, including for
+  the dominant iceberg melt terms: basal melt, buoyant
+  convection and wave erosion. By defining kernels for five
+  different order-of-magnitude iceberg size classes, the
+  model can be used to determine the minimum iceberg size
+  required for icebergs to survive the late Eocene warmth.
+keywords:
+  - melting icebergs
+  - Antarctica
+  - Lagrangian
+  - Eocene
+  - Python
+license: MIT
+version: v1.0
+date-released: '2024-05-22'
