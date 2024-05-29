@@ -22,7 +22,6 @@ conda env create -f meltingicebergs.yml
 conda activate meltingicebergs
 ```
 
-
 ## :file_folder: Folder Structure
 1) preparation_files: Model files used to prepare the simulations.
 2) analysis_files: Analyse specific model components.
@@ -89,6 +88,11 @@ This repository is licensed under an MIT License. You can view the [LICENSE here
 
 ## :bookmark: Cite this repository
 This repository can be found at: <a href="https://zenodo.org/doi/10.5281/zenodo.11208937"><img src="https://zenodo.org/badge/693549425.svg" alt="DOI"></a>.
+
+## Data availability
+The data generated with this code and related to the thesis can be found at:
+
+Elbertsen, M. V., van Sebille, E., & Bijl, P. K. (2024). Data from: Possible provenance of IRD by tracing late Eocene Antarctic iceberg melting using a high-resolution ocean model (v1.0) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.11146355
 
 ## Funding
 This research is supported by the ERC Starting Grant 802835 (OceaNice) to [Peter K. Bijl](https://www.uu.nl/staff/PKBijl).
