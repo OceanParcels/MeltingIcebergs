@@ -26,10 +26,10 @@ authors:
     orcid: 'https://orcid.org/0000-0002-1710-4012'
 identifiers:
   - type: doi
-    value: 10.5281/zenodo.11208938
-    description: MeltingIcebergs v1.0
+    value: 10.5281/zenodo.11386415
+    description: MeltingIcebergs v1.1
 repository-code: 'https://github.com/OceanParcels/MeltingIcebergs'
-repository: 'https://zenodo.org/records/11208938'
+repository: 'https://zenodo.org/records/11386415'
 abstract: >-
   This repository contains the code for Mark Elbertsen's MSc
   project used to perform depth-integrated Lagrangian
@@ -48,5 +48,5 @@ keywords:
   - Eocene
   - Python
 license: MIT
-version: v1.0
-date-released: '2024-05-22'
+version: v1.1
+date-released: '2024-07-02'
